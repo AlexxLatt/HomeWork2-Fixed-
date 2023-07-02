@@ -1,6 +1,6 @@
 .wr-btn {
 
-    a {
+    button {
         border-radius: 5px;
         background-color: $main-color;
         display: block;
@@ -45,7 +45,7 @@
     &-main{
         margin-top: 30px;
         margin-bottom: -10px;
-        a{
+        button{
             color: #FFF;
             font-size: 18px;
             font-weight: 500;
@@ -61,7 +61,7 @@
         }
     }
     &-main-two{
-        a{
+        button{
             color: #FFF;
             font-size: 18px;
             font-weight: 500;
