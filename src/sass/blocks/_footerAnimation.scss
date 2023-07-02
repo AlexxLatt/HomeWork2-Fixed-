@@ -1,0 +1,15 @@
+
+.footer {
+    &__social {
+        a {
+            transition: 0.5s all;
+            // Начальный цвет границы
+            border-color: white;
+
+            &:hover {
+                transition: 0.5s all;
+                border-color: black;
+            }
+        }
+    }
+}

@@ -1,5 +1,6 @@
 .button
 {
+    
     width: 153px;
     height: 32px;
     border-radius: 5px;
@@ -10,6 +11,7 @@
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
+    transition: 0.5s all;
 
     &_main{
         margin-top: 67px;
@@ -33,4 +35,13 @@
         font-size: 14px;
     }
 
+    &:hover{
+        background-color:black;
+     
+        
+    }
 }
+
+
+
+

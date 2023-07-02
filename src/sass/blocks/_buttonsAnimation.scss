@@ -1,0 +1,82 @@
+.wr-btn {
+
+    a {
+        border-radius: 5px;
+        background-color: $main-color;
+        display: block;
+        width: 180px;
+        height: 40px;
+        line-height: 40px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        border: none;
+        letter-spacing: 2px;
+        position: relative;
+        transition: all .35s;
+        span {
+           
+            position: relative;
+            z-index: 2;
+        }
+        &:after {
+            border-radius: 5px;
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: black;
+            transition: all .35s;
+        }
+        &:hover {
+            border-radius: 5px;
+            color: wheat;
+            &:after {
+                width: 100%;
+            }
+        }
+    }
+    &-main{
+        margin-top: 30px;
+        margin-bottom: -10px;
+        a{
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            height: 58px;
+            width: 300px;
+            color: #FFF;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    }
+    &-main-two{
+        a{
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            height: 58px;
+            width: 300px;
+            color: #FFF;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+      
+
+        }
+
+    }
+}
