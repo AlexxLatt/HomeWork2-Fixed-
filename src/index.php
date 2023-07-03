@@ -124,7 +124,9 @@
             Просто заполните форму заявки <br>и мы перезвоним вам в течении 10 минут
         </div>
 
-        <form id="consultation-form" class="feed-form feed-form_mt25" action="#">         
+        <form id="consultation-form" class="feed-form feed-form_mt25" action="check.php" method="post">   
+        
+
             <input name="name" required placeholder="Ваше имя"  type="text">
             <input name="phone" required placeholder="Ваш телефон"  >
             <input name="email" required placeholder="Ваше E-mail"  type="email">
@@ -512,7 +514,10 @@
         <div class="modal__close">&times;</div>
         <div class="modal__subtitle">Просто заполните форму заявки</div>
         <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
-        <form class="feed-form" action="#">         
+        <form class="feed-form" action="check.php" method="post">  
+            
+           
+            
             <input name="name"  placeholder="Ваше имя"  type="text">
             <input name="phone"  placeholder="Ваш телефон" >
             <input name="email"  placeholder="Ваше E-mail"  type="email">
@@ -528,7 +533,9 @@
         <div class="modal__close">&times;</div>
         <div class="modal__subtitle">Ваш заказ:</div>
         <div class="modal__descr">Пульсометр Polar FT1</div>
-        <form class="feed-form" action="#">         
+        <form class="feed-form"action="check.php" method="post">         
+     
+            
             <input name="name" required placeholder="Ваше имя"  type="text">
             <input name="phone" required placeholder="Ваш телефон" >
             <input name="email" required placeholder="Ваше E-mail"  type="email">
@@ -564,3 +571,15 @@
 
 </body>
 </html>
+
+<?php
+session_start();
+
+if (isset($_GET['success'])) {
+    if ($_GET['success'] == 'true') {
+        echo '<script>alert("Ваша заявка принята!");</script>';
+    } else {
+        echo '<script>alert("Ошибка при обработке заявки!");</script>';
+    }
+}
+?>
