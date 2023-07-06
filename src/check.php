@@ -7,8 +7,8 @@ $email = $_POST['email'];
 
 $sql = "INSERT INTO `users`(name,phone,email) VALUES ('$name','$phone','$email')";
 if ($conn->query($sql)) {
-    header('Location: index.php?success=true');
+    header('Location: index.html?success=true');
 } else {
-    header('Location: index.php?success=false');
+    header('Location: index.html?success=false');
 }
 ?>
