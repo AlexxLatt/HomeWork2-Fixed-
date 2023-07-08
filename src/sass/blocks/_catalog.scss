@@ -150,12 +150,33 @@
                     left: -14px;
                     top: 7px;
                 }
+                &:last-child{
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(calc(-50% - 19px));
+                    display: block;
+                    color: $main-color;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: $main-color;
+                    }
+                    
+                    &::before{
+                        content: '';
+                   
+                    }
+                }
             }
+          
         }
         &__back {
             position: absolute;
-            bottom: 0;
-            left: 50%;
+            bottom: -75px;
+            left: 54%;
             transform: translateX(calc(-50% - 19px));
             display: block;
             color: $main-color;
@@ -168,4 +189,10 @@
             }
         }
     }
+}
+
+.catalog-item__list li:last-child::before {
+    content: "";
+    width: 0px;
+    height: 0px;
 }
