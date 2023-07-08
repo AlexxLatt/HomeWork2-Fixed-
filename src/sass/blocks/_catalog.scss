@@ -175,8 +175,8 @@
         }
         &__back {
             position: absolute;
-            bottom: -75px;
-            left: 54%;
+            bottom: -25px;
+            left: 27px;
             transform: translateX(calc(-50% - 19px));
             display: block;
             color: $main-color;
@@ -195,4 +195,4 @@
     content: "";
     width: 0px;
     height: 0px;
-}
+} 
