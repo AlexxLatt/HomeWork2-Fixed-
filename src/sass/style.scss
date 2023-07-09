@@ -1,6 +1,11 @@
+@import'libs/bootstrap-reboot.min';
+@import'libs/fonts';
+@import'libs/slick';
+
 @import 'base/variables';
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-display: swap;
 }
 @import'base/animations';
 .container
